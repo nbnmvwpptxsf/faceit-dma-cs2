@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#0a0a0c"/>
+  <!-- HUD corner brackets -->
+  <path d="M18 18 L18 48 M18 18 L48 18" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M238 18 L238 48 M238 18 L208 18" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M18 238 L18 208 M18 238 L48 238" stroke="#ff2d55" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M238 238 L238 208 M238 238 L208 238" stroke="#ff2d55" stroke-width="2" fill="none" opacity="0.7"/>
+  <!-- HUD tick marks -->
+  <path d="M128 14 L128 24 M128 242 L128 232 M14 128 L24 128 M242 128 L232 128" stroke="#e8e8ec" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Fragmented hexagonal shield, off-center composition -->
+  <g transform="translate(-6, 4)">
+    <!-- Left fragment of hex shield -->
+    <polygon points="128,38 62,74 62,146 128,182" fill="#0a0a0c" stroke="#00e5ff" stroke-width="3" stroke-linejoin="miter"/>
+    <!-- Right fragment, shifted/offset to convey split -->
+    <polygon points="134,182 196,146 196,74 134,38" fill="#0a0a0c" stroke="#00e5ff" stroke-width="3" stroke-linejoin="miter"/>
+
+    <!-- Inner geometric detail on left fragment -->
+    <polygon points="120,62 78,86 78,134 120,158" fill="none" stroke="#e8e8ec" stroke-width="1.5" opacity="0.75"/>
+    <!-- Inner geometric detail on right fragment -->
+    <polygon points="142,62 180,86 180,134 142,158" fill="none" stroke="#e8e8ec" stroke-width="1.5" opacity="0.75"/>
+
+    <!-- Crack: jagged lightning split through center, top to bottom -->
+    <polyline points="130,30 118,64 138,92 112,120 140,150 122,184"
+      fill="none" stroke="#ff2d55" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square"/>
+
+    <!-- Bright crack accent highlight -->
+    <polyline points="130,30 118,64 138,92 112,120 140,150 122,184"
+      fill="none" stroke="#e8e8ec" stroke-width="1" stroke-linejoin="miter" stroke-linecap="square" opacity="0.6"/>
+
+    <!-- Bypass chevron arrows on the right fragment (defiant forward motion) -->
+    <polyline points="156,98 178,122 156,146" fill="none" stroke="#ff2d55" stroke-width="3" stroke-linejoin="miter"/>
+    <polyline points="164,108 178,122 164,136" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="miter" opacity="0.9"/>
+
+    <!-- Small data nodes on left fragment (tactical HUD feel) -->
+    <rect x="92" y="104" width="6" height="6" fill="#00e5ff"/>
+    <rect x="104" y="120" width="4" height="4" fill="#ff2d55"/>
+
+    <!-- Split energy sparks crossing the crack -->
+    <line x1="104" y1="84" x2="128" y2="84" stroke="#ff2d55" stroke-width="2" opacity="0.8"/>
+    <line x1="134" y1="110" x2="160" y2="110" stroke="#00e5ff" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark small, bottom -->
+  <text x="128" y="246" font-family="monospace" font-size="9" fill="#e8e8ec" text-anchor="middle" letter-spacing="2" opacity="0.65">FACEIT-DMA-CS2</text>
+</svg>
